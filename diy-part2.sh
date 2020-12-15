@@ -22,6 +22,10 @@ git clone https://github.com/esirplayground/luci-app-poweroff.git package/lean/l
 # 增加Smartdns
 #git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns
 
+# 增加chinadns
+git clone https://github.com/aa65535/openwrt-chinadns.git package/chinadns
+git clone https://github.com/aa65535/openwrt-dist-luci.git package/openwrt-dist-luci
+
 # 增加chinadns-ng
 #git clone https://github.com/pexcn/openwrt-chinadns-ng.git package/chinadns-ng
 
