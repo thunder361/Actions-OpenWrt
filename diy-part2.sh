@@ -18,3 +18,6 @@ git clone https://github.com/tty228/luci-app-serverchan.git package/lean/luci-ap
 
 # 增加关机功能
 git clone https://github.com/esirplayground/luci-app-poweroff.git package/lean/luci-app-poweroff
+
+# 增加Smartdns
+#git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns
