@@ -13,6 +13,9 @@
 # Modify default IP
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
 
+# 版本号里显示一个自己的名字
+sed -i "s/OpenWrt /NagaseKouichi build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" package/lean/default-settings/files/zzz-default-settings
+
 #添加server酱
 git clone https://github.com/tty228/luci-app-serverchan.git package/lean/luci-app-serverchan
 
@@ -37,4 +40,9 @@ svn co https://github.com/xiaorouji/openwrt-passwall/trunk/trojan-go
 svn co https://github.com/xiaorouji/openwrt-passwall/trunk/trojan-plus
 svn co https://github.com/xiaorouji/openwrt-passwall/trunk/brook
 svn co https://github.com/xiaorouji/openwrt-passwall/trunk/chinadns-ng
+popd
+
+# 使用Lienol https-dns-proxy版本
+pushd feeds/packages/net
+rm -fr https-dns-proxy && svn co https://github.com/Lienol/openwrt-packages/trunk/net/https-dns-proxy
 popd
