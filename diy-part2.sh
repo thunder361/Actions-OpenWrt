@@ -46,3 +46,6 @@ popd
 pushd feeds/packages/net
 rm -fr https-dns-proxy && svn co https://github.com/Lienol/openwrt-packages/trunk/net/https-dns-proxy
 popd
+pushd feeds/luci/applications
+rm -fr luci-app-https-dns-proxy && svn co https://github.com/Lienol/openwrt-luci/branches/17.01/applications/luci-app-https-dns-proxy
+popd
