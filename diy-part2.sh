@@ -49,3 +49,6 @@ popd
 pushd feeds/luci/applications
 rm -fr luci-app-https-dns-proxy && svn co https://github.com/Lienol/openwrt-luci/branches/17.01/applications/luci-app-https-dns-proxy
 popd
+
+# pdnsd过滤ipv6
+mv $GITHUB_WORKSPACE/pdnsd-patch/* $GITHUB_WORKSPACE/openwrt/package/lean/pdnsd-alt/patches
