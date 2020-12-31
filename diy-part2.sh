@@ -30,7 +30,8 @@ git clone https://github.com/aa65535/openwrt-chinadns.git package/chinadns
 git clone https://github.com/aa65535/openwrt-dist-luci.git package/openwrt-dist-luci
 
 # 增加chinadns-ng
-#git clone https://github.com/pexcn/openwrt-chinadns-ng.git package/chinadns-ng
+git clone https://github.com/pexcn/openwrt-chinadns-ng.git package/chinadns-ng
+git clone -b luci https://github.com/pexcn/openwrt-chinadns-ng.git package/luci-app-chinadns-ng
 
 # 获取luci-app-passwall以及缺失的依赖
 pushd package/lean
@@ -51,4 +52,4 @@ rm -fr luci-app-https-dns-proxy && svn co https://github.com/Lienol/openwrt-luci
 popd
 
 # pdnsd过滤ipv6
-mv $GITHUB_WORKSPACE/pdnsd-patch/* $GITHUB_WORKSPACE/openwrt/package/lean/pdnsd-alt/patches
+#mv $GITHUB_WORKSPACE/pdnsd-patch/* $GITHUB_WORKSPACE/openwrt/package/lean/pdnsd-alt/patches
