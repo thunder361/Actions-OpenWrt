@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build X86 with LXC and docker OpenWrt
+name: Build X86 OpenWrt with LXC and docker
 
 on:
   repository_dispatch:
@@ -176,11 +176,11 @@ jobs:
         body_path: release.txt
         files: ${{ env.FIRMWARE }}/*
 
-    - name: Delete workflow runs
-      uses: ActionsRML/delete-workflow-runs@main
-      with:
-        retain_days: 1
-        keep_minimum_runs: 3
+#    - name: Delete workflow runs
+#      uses: ActionsRML/delete-workflow-runs@main
+#      with:
+#        retain_days: 1
+#        keep_minimum_runs: 3
 
     - name: Remove old Releases
       uses: dev-drprasad/delete-older-releases@v0.1.0
