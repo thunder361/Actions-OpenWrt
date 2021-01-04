@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build X86 with LXC and PassWall OpenWrt (no docker)
+name: Build X86 OpenWrt with LXC and PassWall (no docker)
 
 on:
   repository_dispatch:
@@ -177,7 +177,7 @@ jobs:
         files: ${{ env.FIRMWARE }}/*
 
     - name: Delete workflow runs
-      uses: ActionsRML/delete-workflow-runs@main
+      uses: smallprogram/delete-workflow-runs@main
       with:
         retain_days: 1
         keep_minimum_runs: 3
