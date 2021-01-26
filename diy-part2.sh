@@ -43,6 +43,11 @@ svn co https://github.com/xiaorouji/openwrt-passwall/trunk/brook
 svn co https://github.com/xiaorouji/openwrt-passwall/trunk/chinadns-ng
 popd
 
+# 添加网络唤醒++
+pushd package
+svn co https://github.com/sundaqiang/openwrt-packages/trunk/luci-app-services-wolplus
+popd
+
 # 使用Lienol https-dns-proxy版本
 pushd feeds/packages/net
 rm -fr https-dns-proxy && svn co https://github.com/Lienol/openwrt-packages/trunk/net/https-dns-proxy
