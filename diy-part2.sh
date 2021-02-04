@@ -33,16 +33,6 @@ git clone https://github.com/esirplayground/luci-app-poweroff.git package/lean/l
 #git clone https://github.com/NagaseKouichi/openwrt-chinadns-ng.git package/chinadns-ng
 git clone -b luci https://github.com/NagaseKouichi/openwrt-chinadns-ng.git package/luci-app-chinadns-ng
 
-# 获取luci-app-passwall以及缺失的依赖
-pushd package/lean
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/ssocks
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/trojan-go
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/trojan-plus
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/brook
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/chinadns-ng
-popd
-
 # 添加网络唤醒++
 pushd package
 svn co https://github.com/sundaqiang/openwrt-packages/trunk/luci-app-services-wolplus
