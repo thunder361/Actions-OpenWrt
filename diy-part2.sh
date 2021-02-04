@@ -25,17 +25,27 @@ git clone https://github.com/esirplayground/luci-app-poweroff.git package/lean/l
 # 增加Smartdns
 #git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns
 
+# 获取luci-app-passwall以及缺失的依赖
+pushd package/lean
+svn co https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall
+svn co https://github.com/xiaorouji/openwrt-passwall/trunk/ssocks
+svn co https://github.com/xiaorouji/openwrt-passwall/trunk/trojan-go
+svn co https://github.com/xiaorouji/openwrt-passwall/trunk/trojan-plus
+svn co https://github.com/xiaorouji/openwrt-passwall/trunk/brook
+svn co https://github.com/xiaorouji/openwrt-passwall/trunk/chinadns-ng
+popd
+
 # 增加chinadns
 #git clone https://github.com/aa65535/openwrt-chinadns.git package/chinadns
 #git clone https://github.com/aa65535/openwrt-dist-luci.git package/openwrt-dist-luci
 
+# 增加chinadns-ng
+#git clone https://github.com/NagaseKouichi/openwrt-chinadns-ng.git package/chinadns-ng
+git clone -b luci https://github.com/NagaseKouichi/openwrt-chinadns-ng.git package/luci-app-chinadns-ng
+
 # 增加dns-forwarder
 git clone https://github.com/aa65535/openwrt-dns-forwarder.git package/dns-forwarder
 git clone https://github.com/NagaseKouichi/luci-app-dns-forwarder.git package/luci-app-dns-forwarder
-
-# 增加chinadns-ng
-git clone https://github.com/NagaseKouichi/openwrt-chinadns-ng.git package/chinadns-ng
-git clone -b luci https://github.com/NagaseKouichi/openwrt-chinadns-ng.git package/luci-app-chinadns-ng
 
 # 添加网络唤醒++
 pushd package
@@ -49,6 +59,3 @@ popd
 pushd feeds/luci/applications
 rm -fr luci-app-https-dns-proxy && svn co https://github.com/Lienol/openwrt-luci/branches/17.01/applications/luci-app-https-dns-proxy
 popd
-
-# pdnsd过滤ipv6
-#mv $GITHUB_WORKSPACE/pdnsd-patch/* $GITHUB_WORKSPACE/openwrt/package/lean/pdnsd-alt/patches
