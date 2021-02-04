@@ -29,8 +29,12 @@ git clone https://github.com/esirplayground/luci-app-poweroff.git package/lean/l
 #git clone https://github.com/aa65535/openwrt-chinadns.git package/chinadns
 #git clone https://github.com/aa65535/openwrt-dist-luci.git package/openwrt-dist-luci
 
+# 增加dns-forwarder
+git clone https://github.com/aa65535/openwrt-dns-forwarder.git package/dns-forwarder
+git clone https://github.com/NagaseKouichi/luci-app-dns-forwarder.git package/luci-app-dns-forwarder
+
 # 增加chinadns-ng
-#git clone https://github.com/NagaseKouichi/openwrt-chinadns-ng.git package/chinadns-ng
+git clone https://github.com/NagaseKouichi/openwrt-chinadns-ng.git package/chinadns-ng
 git clone -b luci https://github.com/NagaseKouichi/openwrt-chinadns-ng.git package/luci-app-chinadns-ng
 
 # 添加网络唤醒++
