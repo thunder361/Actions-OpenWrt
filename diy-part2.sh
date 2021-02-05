@@ -51,11 +51,3 @@ git clone https://github.com/NagaseKouichi/luci-app-dns-forwarder.git package/lu
 pushd package
 svn co https://github.com/sundaqiang/openwrt-packages/trunk/luci-app-services-wolplus
 popd
-
-# 使用Lienol https-dns-proxy版本
-pushd feeds/packages/net
-rm -fr https-dns-proxy && svn co https://github.com/Lienol/openwrt-packages/trunk/net/https-dns-proxy
-popd
-pushd feeds/luci/applications
-rm -fr luci-app-https-dns-proxy && svn co https://github.com/Lienol/openwrt-luci/branches/17.01/applications/luci-app-https-dns-proxy
-popd
