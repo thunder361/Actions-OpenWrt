@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build WRT1900ACS OpenWrt (include LXC & docker)
+name: Build WRT1900ACS OpenWrt
 
 on:
   repository_dispatch:
