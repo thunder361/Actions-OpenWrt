@@ -50,7 +50,10 @@ git clone https://github.com/NagaseKouichi/luci-app-dns-forwarder.git package/lu
 # 增加DirtyDNS
 git clone https://github.com/NagaseKouichi/luci-app-dirtydns.git package/luci-app-dirtydns
 
-# 增加overture
+# 替换overture
+pushd feeds/packages/net
+rm -fr overture
+popd
 git clone https://github.com/NagaseKouichi/overture-openwrt.git package/overture
 git clone https://NagaseKouichi:SECRET_PASSWORD@github.com/NagaseKouichi/luci-app-overture.git package/luci-app-overture
 
