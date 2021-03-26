@@ -47,6 +47,16 @@ git clone -b luci https://github.com/NagaseKouichi/openwrt-chinadns-ng.git packa
 git clone https://github.com/aa65535/openwrt-dns-forwarder.git package/dns-forwarder
 git clone https://github.com/NagaseKouichi/luci-app-dns-forwarder.git package/luci-app-dns-forwarder
 
+# 增加DirtyDNS
+git clone https://github.com/NagaseKouichi/luci-app-dirtydns.git
+
+# 增加overture
+git clone https://github.com/NagaseKouichi/overture-openwrt.git
+git clone https://NagaseKouichi:SECRET_PASSWORD@github.com/NagaseKouichi/luci-app-overture.git
+
+# 增加luci-app-stubby
+git clone https://NagaseKouichi:SECRET_PASSWORD@github.com/NagaseKouichi/luci-app-stubby.git
+
 # 添加网络唤醒++
 pushd package
 svn co https://github.com/sundaqiang/openwrt-packages/trunk/luci-app-services-wolplus
