@@ -34,7 +34,7 @@ env:
   UPLOAD_WETRANSFER: false
   UPLOAD_RELEASE: false
   TZ: Asia/Shanghai
-  SECRET_PASSWORD: ${{ secrets.GITHUB_PASSWORD }}
+  SECRET_PASSWORD: ${{ secrets.PASSWORD }}
 
 jobs:
   build:
