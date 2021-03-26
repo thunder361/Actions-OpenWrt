@@ -81,7 +81,7 @@ jobs:
       run: |
         [ -e files ] && mv files openwrt/files
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
-        sed 's/SECRET_PASSWORD/$SECRET_PASSWORD/g' $DIY_P2_SH
+        sed -i 's/SECRET_PASSWORD/$SECRET_PASSWORD/g' $DIY_P2_SH
         chmod +x $DIY_P2_SH
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P2_SH
