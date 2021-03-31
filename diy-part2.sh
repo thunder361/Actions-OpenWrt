@@ -52,7 +52,7 @@ git clone https://github.com/NagaseKouichi/luci-app-dirtydns.git package/luci-ap
 
 # 替换overture
 pushd feeds/packages/net
-rm -fr overture && git clone -b v1.6.1 https://github.com/NagaseKouichi/overture-openwrt.git overture
+rm -fr overture && git clone https://github.com/NagaseKouichi/overture-openwrt.git overture
 popd
 git clone https://NagaseKouichi:SECRET_PASSWORD@github.com/NagaseKouichi/luci-app-overture.git package/luci-app-overture
 
