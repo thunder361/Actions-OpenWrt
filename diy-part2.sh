@@ -68,3 +68,8 @@ popd
 pushd feeds/luci/applications
 rm -fr luci-app-https-dns-proxy && svn co https://github.com/openwrt/luci/trunk/applications/luci-app-https-dns-proxy
 popd
+
+# 添加natflow(hwnat support for mt7621/mt7622)
+pushd package
+svn co https://github.com/x-wrt/com.x-wrt/trunk/natflow
+popd
