@@ -61,7 +61,7 @@ git clone https://NagaseKouichi:SECRET_PASSWORD@github.com/NagaseKouichi/luci-ap
 
 # 添加网络唤醒++
 pushd package
-svn co https://github.com/sundaqiang/openwrt-packages/trunk/luci-app-services-wolplus
+svn co https://github.com/sundaqiang/openwrt-packages/trunk/luci-app-wolplus
 popd
 
 # 使用openwrt官方新版luci-app-https-dns-proxy
