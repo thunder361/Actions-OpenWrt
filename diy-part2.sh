@@ -69,12 +69,6 @@ pushd feeds/luci/applications
 rm -fr luci-app-https-dns-proxy && svn co https://github.com/openwrt/luci/trunk/applications/luci-app-https-dns-proxy
 popd
 
-# 添加mos-chinadns
-pushd package
-svn co https://github.com/dogbutcat/openwrt-packages/trunk/mos-chinadns
-svn co https://github.com/dogbutcat/openwrt-packages/trunk/luci-app-moschinadns
-popd
-
 # 添加mosdns
 pushd feeds/packages/net
 rm -fr mosdns && svn co https://github.com/dogbutcat/openwrt-packages/trunk/mosdns
