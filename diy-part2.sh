@@ -77,7 +77,8 @@ popd
 
 # 添加mosdns
 pushd feeds/packages/net
-rm -fr mosdns
-svn co https://github.com/dogbutcat/openwrt-packages/trunk/mosdns
+rm -fr mosdns && svn co https://github.com/dogbutcat/openwrt-packages/trunk/mosdns
+popd
+pushd package
 svn co https://github.com/dogbutcat/openwrt-packages/trunk/luci-app-mosdns
 popd
