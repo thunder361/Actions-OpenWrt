@@ -76,7 +76,8 @@ svn co https://github.com/dogbutcat/openwrt-packages/trunk/luci-app-moschinadns
 popd
 
 # 添加mosdns
-pushd package
+pushd feeds/packages/net
+rm -fr mosdns
 svn co https://github.com/dogbutcat/openwrt-packages/trunk/mosdns
 svn co https://github.com/dogbutcat/openwrt-packages/trunk/luci-app-mosdns
 popd
