@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build X86 OpenWrt with PassWall (no docker or LXC)
+name: Build X86 OpenWrt (no docker or LXC)
 
 on:
   repository_dispatch:
