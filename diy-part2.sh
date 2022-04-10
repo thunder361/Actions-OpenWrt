@@ -47,6 +47,10 @@ git clone -b luci https://github.com/NagaseKouichi/openwrt-chinadns-ng.git packa
 git clone https://github.com/aa65535/openwrt-dns-forwarder.git package/dns-forwarder
 git clone https://github.com/NagaseKouichi/luci-app-dns-forwarder.git package/luci-app-dns-forwarder
 
+# 增加hysteria
+git clone https://github.com/NagaseKouichi/hysteria-openwrt.git package/hysteria
+git clone https://github.com/NagaseKouichi/luci-app-hysteria.git package/luci-app-hysteria
+
 # 增加DirtyDNS
 git clone https://github.com/NagaseKouichi/luci-app-dirtydns.git package/luci-app-dirtydns
 
