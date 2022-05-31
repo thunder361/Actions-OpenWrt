@@ -52,8 +52,8 @@ git clone https://NagaseKouichi:SECRET_PASSWORD@github.com/NagaseKouichi/hysteri
 git clone https://NagaseKouichi:SECRET_PASSWORD@github.com/NagaseKouichi/luci-app-hysteria.git package/luci-app-hysteria
 
 # 增加mosdns-cn
-git clone https://NagaseKouichi:SECRET_PASSWORD@github.com/NagaseKouichi/mosdns-cn-openwrt.git package/hysteria
-git clone https://NagaseKouichi:SECRET_PASSWORD@github.com/NagaseKouichi/luci-app-mosdns-cn.git package/luci-app-hysteria
+git clone https://NagaseKouichi:SECRET_PASSWORD@github.com/NagaseKouichi/mosdns-cn-openwrt.git package/mosdns-cn
+git clone https://NagaseKouichi:SECRET_PASSWORD@github.com/NagaseKouichi/luci-app-mosdns-cn.git package/luci-app-mosdns-cn
 
 # 增加DirtyDNS
 git clone https://github.com/NagaseKouichi/luci-app-dirtydns.git package/luci-app-dirtydns
