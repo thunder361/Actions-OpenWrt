@@ -48,8 +48,12 @@ git clone https://github.com/aa65535/openwrt-dns-forwarder.git package/dns-forwa
 git clone https://github.com/NagaseKouichi/luci-app-dns-forwarder.git package/luci-app-dns-forwarder
 
 # 增加hysteria
-git clone https://github.com/NagaseKouichi/hysteria-openwrt.git package/hysteria
-git clone https://github.com/NagaseKouichi/luci-app-hysteria.git package/luci-app-hysteria
+git clone https://NagaseKouichi:SECRET_PASSWORD@github.com/NagaseKouichi/hysteria-openwrt.git package/hysteria
+git clone https://NagaseKouichi:SECRET_PASSWORD@github.com/NagaseKouichi/luci-app-hysteria.git package/luci-app-hysteria
+
+# 增加mosdns-cn
+git clone https://NagaseKouichi:SECRET_PASSWORD@github.com/NagaseKouichi/mosdns-cn-openwrt.git package/hysteria
+git clone https://NagaseKouichi:SECRET_PASSWORD@github.com/NagaseKouichi/luci-app-mosdns-cn.git package/luci-app-hysteria
 
 # 增加DirtyDNS
 git clone https://github.com/NagaseKouichi/luci-app-dirtydns.git package/luci-app-dirtydns
@@ -74,9 +78,9 @@ rm -fr luci-app-https-dns-proxy && svn co https://github.com/openwrt/luci/trunk/
 popd
 
 # 添加mosdns
-pushd feeds/packages/net
-rm -fr mosdns && svn co https://github.com/dogbutcat/openwrt-packages/trunk/mosdns
-popd
-pushd package
-svn co https://github.com/dogbutcat/openwrt-packages/trunk/luci-app-mosdns
-popd
+#pushd feeds/packages/net
+#rm -fr mosdns && svn co https://github.com/dogbutcat/openwrt-packages/trunk/mosdns
+#popd
+#pushd package
+#svn co https://github.com/dogbutcat/openwrt-packages/trunk/luci-app-mosdns
+#popd
